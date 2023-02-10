@@ -3,7 +3,6 @@ strict = true
 
 # Extra flags
 warn_unreachable = true
-allow_redefinition = true
 
 enable_error_code = [
   "redundant-expr",
