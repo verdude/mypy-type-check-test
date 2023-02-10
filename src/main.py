@@ -1,4 +1,4 @@
-from pkg.config import Config
+from config import Config
 
 def function() -> Config:
     print(Config.some_attribute)
