@@ -34,12 +34,12 @@ resportMissingTypeStubs = true
 name = "mypy-type-check-test"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
-readme = "README.md"
-packages = [{include = "mypy_type_check_test"}]
+authors = []
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+lxml = "^4.9.2"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.0.0"
