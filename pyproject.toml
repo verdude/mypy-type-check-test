@@ -28,7 +28,7 @@ ignore = [
 ]
 pythonVersion = "3.9"
 reportMissingImports = true
-resportMissingTypeStubs = true
+reportMissingTypeStubs = true
 
 [tool.poetry]
 name = "mypy-type-check-test"
