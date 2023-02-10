@@ -1,0 +1,49 @@
+[tool.mypy]
+strict = true
+
+# Extra flags
+warn_unreachable = true
+allow_redefinition = true
+
+enable_error_code = [
+  "redundant-expr",
+  "truthy-bool",
+  "ignore-without-code",
+  "unused-awaitable",
+]
+
+# Error Formatting
+show_column_numbers = true
+show_error_context = true
+show_error_codes = true
+show_traceback = true
+pretty = true
+color_output = true
+error_summary = true
+
+[tool.pyright]
+ignore = [
+  "**/__pycache__",
+  "**/tests",
+]
+pythonVersion = "3.9"
+reportMissingImports = true
+resportMissingTypeStubs = true
+
+[tool.poetry]
+name = "mypy-type-check-test"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "mypy_type_check_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
