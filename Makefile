@@ -15,7 +15,15 @@ clean:
 	rm -f index.txt
 
 .PHONY: check
+poetry-check: poetry.lock clean
+	# run mypy first
+	make
+	# pyright via poetry
+	poetry run pyright
+
+.PHONY: check
 check: poetry.lock clean
 	# run mypy first
 	make
+	# pre-installed pyright
 	pyright
